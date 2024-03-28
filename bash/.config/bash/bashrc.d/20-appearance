@@ -1,0 +1,28 @@
+__set_prompt() {
+	# Accent color based on the status of the last command
+	local red='\e[1;91m' blue='\e[1;94m' reset='\e[0m' accent status=$?
+	if [ $status = 0 ]; then
+		accent=$blue
+	else
+		accent=$red
+	fi
+
+	# Make path parseable
+	local path="$PWD"
+	path="${path//\\/\\\\}"
+	path="${path//\`/\\\`}"
+	path="${path//$/\\$}"
+	path="${path/#$HOME/\~}"
+
+	# Shorten the path
+	local -a parts
+	IFS='/' read -r -a parts <<< $path
+	[ ${#parts[@]} -gt 3 ] \
+		&& path="${parts[0]}/${parts[1]}/.../${parts[-1]}"
+
+	# Set the path
+	export PS1="$accent$path$reset "
+	export PS2="$(printf "$path" | sed 's/./ /g') "
+}
+
+export PROMPT_COMMAND=__set_prompt
