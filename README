@@ -1,0 +1,25 @@
+                                       dots
+                           One more dotfiles repository
+                           ============================
+
+About
+-----
+
+This repository contains my configuration files for various software I use on my
+GNU/Linux machine, for back-up and sharing purposes.
+
+Installation
+------------
+
+Refer to the INSTALL file for installation instructions.
+
+Unlicense
+---------
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this
+software, either in source code form or as a compiled binary, for any purpose,
+commercial or non-commercial, and by any means.
+
+For details, see the UNLICENSE file.
