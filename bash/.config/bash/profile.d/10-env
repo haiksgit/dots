@@ -19,7 +19,7 @@ XDG_STATE_HOME=~/.local/state          \
 XDG_CACHE_HOME=~/.cache                \
                                        \
 XAUTHORITY=~/.local/share/xorg/auth    \
-VIMINIT='source ~/.config/vimrc'       \
+VIMINIT='source ~/.config/vim/vimrc'   \
 GNUPGHOME=~/.local/share/gnupg         \
                                        \
 PASSWORD_STORE_DIR=~/.local/share/pass \
