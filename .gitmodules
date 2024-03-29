@@ -1,0 +1,12 @@
+[submodule "vim-colors-plain"]
+	path = vim/.local/share/vim/pack/plug/start/vim-colors-plain
+	url = https://github.com/andreypopp/vim-colors-plain.git
+	shallow = true
+[submodule "vim-goyo"]
+	path = vim/.local/share/vim/pack/plug/start/vim-goyo
+	url = https://github.com/junegunn/goyo.vim.git
+	shallow = true
+[submodule "vim-limelight"]
+	path = vim/.local/share/vim/pack/plug/start/vim-limelight
+	url = https://github.com/junegunn/limelight.vim
+	shallow = true

@@ -2,12 +2,13 @@
                              =========================
 
 These dotfiles are managed by GNU Stow. Configuration files are stored in
-different directories, each representing a separate application or a component
+different directories, each representing a separate application, or a component
 of the system.
 
-First, clone the most recent branch of this repository:
+First, clone the most recent branch of this repository, along with the Git
+submodules:
 
-	$ git clone https://github.com/haiksgit/dots.git
+	$ git clone --recurse-submodules https://github.com/haiksgit/dots.git
 
 Then, run GNU Stow to create symlinks for neccessary applications or components:
 

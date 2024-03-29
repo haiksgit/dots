@@ -12,3 +12,19 @@ set runtimepath+=$configdir,$configdir/after,$VIM,$VIMRUNTIME
 set packpath+=$datadir,$datadir/after
 
 let $MYVIMRC="$configdir/vimrc"
+
+syntax on
+filetype plugin on
+
+set background=light
+colorscheme plain-cterm
+
+set tabstop=8
+set shiftwidth=8
+set autoindent
+set smartindent
+set list
+set listchars=tab:→\ ,trail:·
+
+set number
+set relativenumber
