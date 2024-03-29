@@ -1,0 +1,14 @@
+set nocompatible
+
+let $statedir="$HOME/.local/state/vim"
+let $configdir="$HOME/.config/vim"
+let $datadir="$HOME/.local/share/vim"
+
+set directory=$statedir/swap,/var/tmp,/tmp
+set backupdir=$statedir/backup,/var/tmp,/tmp
+set undodir=$statedir/undo,/var/tmp,/tmp
+set viminfo+=n$statedir/viminfo
+set runtimepath+=$configdir,$configdir/after,$VIM,$VIMRUNTIME
+set packpath+=$datadir,$datadir/after
+
+let $MYVIMRC="$configdir/vimrc"
