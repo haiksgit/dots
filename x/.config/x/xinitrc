@@ -1,0 +1,18 @@
+#!/bin/sh
+
+_() pidof "$1" > /dev/null
+
+xset +fp /usr/local/share/fonts/X11/misc/
+
+touchpad='ELAN0731:00 04F3:3169 Touchpad'
+xinput set-prop "$touchpad" 'libinput Tapping Enabled' 1
+xinput set-prop "$touchpad" 'libinput Tapping Drag Enabled' 1
+xinput set-prop "$touchpad" 'libinput Natural Scrolling Enabled' 1
+xinput set-prop "$touchpad" 'libinput Disable While Typing Enabled' 1
+
+setxkbmap -layout us,am -variant ,phonetic -option grp:alt_shift_toggle
+setxkpmap -option compose:ralt
+
+feh --no-fehbg --bg-fill -z ~/hub/xdg/pics/walls/
+
+_ dwm || exec dwm > /dev/null 2>&1
