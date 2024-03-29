@@ -1,0 +1,7 @@
+#!/bin/sh
+
+interval=60
+while :; do
+	printf 'battery=%s\n' "$(cat /sys/class/power_supply/BAT0/capacity)%"
+	sleep "$interval"
+done

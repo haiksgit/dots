@@ -1,0 +1,14 @@
+#!/bin/sh
+
+{ echo; alsactl monitor; } |
+	while read -r _; do
+		info="$(amixer get Master)"
+
+		status="${info##*[}"
+		status="${status%]*}"
+
+		volume="${info%%%]*}"
+		volume="${volume##*[}"
+
+		printf 'volstatus=%s\nvolume=%s\n' "$status" "$volume%"
+	done

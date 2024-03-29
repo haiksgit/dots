@@ -1,0 +1,12 @@
+#!/bin/sh
+
+secs="$(date +%S)"
+till="$((60 - $secs))"
+
+printf 'clock=%s\n' "$(date +%H:%M)"
+sleep "$till"
+
+while :; do
+	printf 'clock=%s\n' "$(date +%H:%M)"
+	sleep 60
+done

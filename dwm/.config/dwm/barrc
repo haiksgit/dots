@@ -1,0 +1,2 @@
+modules=(clock battery volume)
+format=' [c] $clock [b] $battery [v] $volstatus $volume '

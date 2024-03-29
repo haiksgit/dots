@@ -15,4 +15,5 @@ setxkpmap -option compose:ralt
 
 feh --no-fehbg --bg-fill -z ~/hub/xdg/pics/walls/
 
-_ dwm || exec dwm > /dev/null 2>&1
+_ dwmstat || { dwmstat & }
+_ dwm     || exec dwm > /dev/null 2>&1

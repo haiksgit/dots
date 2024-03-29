@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. ~/.config/dwm/barrc
+
+for module in "${modules[@]}"; do
+	~/.config/dwm/modules/"$module" &
+done |
+	while IFS= read -r option; do
+		export "$option"
+		eval "xsetroot -name \"$format\""
+	done
