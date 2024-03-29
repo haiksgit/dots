@@ -1,0 +1,6 @@
+[user]
+	name = Haik Khachatrian
+	email = haiksemail@gmail.com
+	signingkey = 3574B3F358500B62
+[commit]
+	gpgsign = true
