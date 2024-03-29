@@ -18,7 +18,7 @@ XDG_DATA_HOME=~/.local/share           \
 XDG_STATE_HOME=~/.local/state          \
 XDG_CACHE_HOME=~/.cache                \
                                        \
-XAUTHORITY=~/.local/share/x/auth       \
+XAUTHORITY=~/.local/share/xorg/auth    \
 GNUPGHOME=~/.local/share/gnupg         \
                                        \
 PASSWORD_STORE_DIR=~/.local/share/pass \
