@@ -4,3 +4,5 @@
 	signingkey = 3574B3F358500B62
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = trunk
