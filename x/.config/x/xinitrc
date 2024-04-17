@@ -11,7 +11,7 @@ xinput set-prop "$touchpad" 'libinput Natural Scrolling Enabled' 1
 xinput set-prop "$touchpad" 'libinput Disable While Typing Enabled' 1
 
 setxkbmap -layout us,am -variant ,phonetic -option grp:alt_shift_toggle
-setxkpmap -option compose:ralt
+setxkbmap -option compose:ralt
 
 feh --no-fehbg --bg-fill -z ~/hub/xdg/pics/walls/
 
