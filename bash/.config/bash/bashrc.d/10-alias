@@ -1,17 +1,17 @@
-alias                                                    \
-                                                         \
-ls='ls -AFN --si --group-directories-first --color=auto' \
-ll='ls -la'                                              \
-mk='mkdir -p'                                            \
-cp='cp -r'                                               \
-rm='rm -rf'                                              \
-tc=':>>'                                                 \
-vi='vim'                                                 \
-free='free -h'                                           \
-                                                         \
-xa='sudo xbps-install -S'                                \
-xu='xa -u'                                               \
-xr='sudo xbps-remove -R'                                 \
-xq='xbps-query'                                          \
-xs='xq -Rs'                                              \
+alias                                                     \
+                                                          \
+ls='ls -AFNX --si --group-directories-first --color=auto' \
+ll='ls -la'                                               \
+mk='mkdir -p'                                             \
+cp='cp -r'                                                \
+rm='rm -rf'                                               \
+tc=':>>'                                                  \
+vi='vim'                                                  \
+free='free -h'                                            \
+                                                          \
+xa='sudo xbps-install -S'                                 \
+xu='xa -u'                                                \
+xr='sudo xbps-remove -R'                                  \
+xq='xbps-query'                                           \
+xs='xq -Rs'                                               \
 xl='xq -l'
