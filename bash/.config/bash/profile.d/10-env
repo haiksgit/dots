@@ -25,4 +25,6 @@ GTK2_RC_FILES=~/.config/gtk-2.0/gtkrc  \
                                        \
 PASSWORD_STORE_DIR=~/.local/share/pass \
 PASSWORD_STORE_CLIP_TIME=10            \
-PASSWORD_STORE_GENERATE_LENGTH=64
+PASSWORD_STORE_GENERATE_LENGTH=64      \
+                                       \
+USE_EMOJI=0
