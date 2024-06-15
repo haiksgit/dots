@@ -7,30 +7,30 @@ set guioptions ""
 
 set page-padding 0
 
-set default-bg "#000"
+set default-bg "#969696"
 set default-fg "#fff"
 
 set completion-bg "#fff"
-set completion-fg "#000"
+set completion-fg "#252525"
 set completion-group-bg "#fff"
 set completion-group-fg "#000"
-set completion-highlight-bg "#000"
+set completion-highlight-bg "#d95f02"
 set completion-highlight-fg "#fff"
 
 set inputbar-bg "#fff"
-set inputbar-fg "#000"
+set inputbar-fg "#252525"
 
 set notification-bg "#fff"
-set notification-fg "#000"
-set notification-error-bg "#900"
+set notification-fg "#252525"
+set notification-error-bg "#d95f02"
 set notification-error-fg "#fff"
-set notification-warning-bg "#990"
+set notification-warning-bg "#e6ab02"
 set notification-warning-fg "#fff"
 
 set statusbar-bg "#fff"
-set statusbar-fg "#000"
+set statusbar-fg "#252525"
 
 set index-bg "#fff"
-set index-fg "#000"
-set index-active-bg "#000"
+set index-fg "#252525"
+set index-active-bg "#d95f02"
 set index-active-fg "#fff"
