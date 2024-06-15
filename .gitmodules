@@ -10,3 +10,11 @@
 	path = vim/.local/share/vim/pack/plug/start/vim-limelight
 	url = https://github.com/junegunn/limelight.vim
 	shallow = true
+[submodule "vim-snipmate"]
+	path = vim/.local/share/vim/pack/plug/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+	shallow = true
+[submodule "vim-addon-mw-utils"]
+	path = vim/.local/share/vim/pack/plug/start/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+	shallow = true

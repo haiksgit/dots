@@ -1,0 +1,160 @@
+### Macro-level stuff
+
+snippet dcl Set the document class
+	\\documentclass{${1}}
+
+snippet dclo Set the document class (with options)
+	\\documentclass[${2}]{${1}}
+
+snippet upkg Import a package
+	\\usepackage{${1}}
+
+snippet upkgo Import a package (with options)
+	\\usepackage[${2}]{${1}}
+
+snippet rpkg Import a package
+	\\RequirePackage{${1}}
+
+snippet rpkgo Import a package (with options)
+	\\RequirePackage[${2}]{${1}}
+
+snippet ndc Define a new macro
+	\\NewDocumentCommand{\\${1}}{${2}}{%
+		${1}%
+	}
+
+snippet rndc Redefine a macro
+	\\RenewDocumentCommand{\\${1}}{${2}}{%
+		${1}%
+	}
+
+snippet ncc Copy into a new macro
+	\\NewCommandCopy{${1}}{${2}}
+
+snippet rncc Copy into an existing macro
+
+snippet nde Define a new environment
+	\\NewDocumentEnvironment{${1}}{${2}}{%
+		${0}%
+	}{%
+	}
+
+snippet nc Define a new variable
+	\\newcommand*{\\${1}}{${2}}
+
+snippet ncl Define a new long variable
+	\\newcommand{\\${1}}{${2}}
+
+### Environments
+
+snippet env Start an environment
+	\\begin{${1}}
+		${0}
+	\\end{${1}}
+
+snippet envo Start an environment with options
+	\\begin{${1}}${2}
+		${0}
+	\\end{${1}}
+
+snippet fig Insert a figure
+	\\begin{figure}
+		\\centering
+		${0}
+		\\caption{${1}}
+		\\label{fig:${2}}
+	\\end{figure}
+
+snippet tbl Insert a table
+	\\begin{table}
+		\\centering
+		\\caption{${1}}
+		\\label{tbl:${2}}
+		\\begin{tabular}{${3}}
+			${0}
+		\\end{tabular}
+	\\end{table}
+
+snippet lst Insert a listing
+	\\begin{listing}
+		\\centering
+		\\caption{${1}}
+		\\label{lst:${2}}
+		${0}
+	\\end{listing}
+
+snippet tikz Start a TikZ picture
+	\\begin{tikzpicture}
+		${0};
+	\\end{tikzpicture}
+
+snippet ul Start an unordered list
+	\\begin{itemize}
+		\item ${0}
+	\\end{itemize}
+
+snippet ol Start an ordered list
+	\\begin{enumerate}
+		\item ${0}
+	\\end{enumerate}
+
+snippet dsc Start a new description list
+	\\begin{description}
+		\item[${1}] ${0}
+	\\end{description}
+
+### Referencing
+
+snippet cap
+	\\caption{${1}}
+	\\label{${2}}
+
+snippet lab
+	\\label{${1}}
+
+### Headings
+
+snippet prt Make a part
+	\\part{${1}}
+	\\label{prt:${2}}
+
+snippet chp Make a chapter
+	\\chapter{${1}}
+	\\label{chp:${2}}
+
+snippet sec Make a section
+	\\section{${1}}
+	\\label{sec:${2}}
+
+snippet ssc Make a subsection
+	\\subsection{${1}}
+	\\label{ssc:${2}}
+
+snippet sss Make a subsubsection
+	\\subsubsection{${1}}
+	\\label{sss:${2}}
+
+snippet par Make a paragraph
+	\\paragraph{${1}}
+	\\label{par:${2}}
+
+snippet spr Make a subparagraph
+	\\subparagraph{${1}}
+	\\label{spr:${2}}
+
+### Mathematics
+
+snippet frac Make a fraction
+	\\frac{${1}}{${2}}
+
+snippet sum Summation notation
+	\\sum_{${1}}^{${2}}
+
+snippet prod Product notation
+	\\prod_{${1}}^{${2}}
+
+snippet int Integral
+	\\int_{${1}}^{${2}}
+
+snippet lim Limit
+	\\lim_{${1}}
