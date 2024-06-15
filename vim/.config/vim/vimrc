@@ -30,3 +30,6 @@ set number
 set relativenumber
 
 let g:limelight_conceal_ctermfg = 'gray'
+
+autocmd vimenter *.{md,tex,ltx} Goyo
+autocmd vimenter *.{md,tex,ltx} Limelight
