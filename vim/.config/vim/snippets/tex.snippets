@@ -20,12 +20,12 @@ snippet rpkgo Import a package (with options)
 
 snippet ndc Define a new macro
 	\\NewDocumentCommand{\\${1}}{${2}}{%
-		${1}%
+		${0}%
 	}
 
 snippet rndc Redefine a macro
 	\\RenewDocumentCommand{\\${1}}{${2}}{%
-		${1}%
+		${0}%
 	}
 
 snippet ncc Copy into a new macro
@@ -90,17 +90,17 @@ snippet tikz Start a TikZ picture
 
 snippet ul Start an unordered list
 	\\begin{itemize}
-		\item ${0}
+		\\item ${0}
 	\\end{itemize}
 
 snippet ol Start an ordered list
 	\\begin{enumerate}
-		\item ${0}
+		\\item ${0}
 	\\end{enumerate}
 
 snippet dsc Start a new description list
 	\\begin{description}
-		\item[${1}] ${0}
+		\\item[${1}] ${0}
 	\\end{description}
 
 ### Referencing
